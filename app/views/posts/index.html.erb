@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+
+<% @posts.reverse_each do |post| %>
+<div class="panel panel-default">
+   <%= image_tag post.user.avatar.url, size: 50, class: 'float-left' %>
+  
+  <div class="panel-heading"><h2><%= post.title %></h2>
+    <h6>submitted by</h6>
+    
+    <h5><%= link_to post.user.username, user_posts_path(name: post.user.username) %></h5>
+    
+    <h6>&nbsp;<%= distance_of_time_in_words(Time.now, post.created_at) %> ago</h6>
+    <h6 class="right"><a href=''><%= link_to 'delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+    <h6 class="right"><%= link_to 'edit', edit_post_path(post) %></h6>
+    <h6 class="right"><%= link_to 'show', post %></h6>
+  </div>
+
+  <div class="panel-body">
+    <%= post.blog_entry %>
+  </div>
+</div>
+<% end %>
+
+<%= paginate @posts %>

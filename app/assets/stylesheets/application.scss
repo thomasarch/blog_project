@@ -1,0 +1,113 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+*, body, h1, h2, h3, h4, h5, h6, p {
+	margin: 0px;
+	padding: 0px;
+}
+
+.header {
+	padding:0px;
+	margin: 0px;
+	height: 66px;
+	width:100%;
+	background-color: #282828;
+	color: #f9f8f8;
+	border-bottom: 2px solid #5aaf0a;
+}
+
+.header h1 {
+	line-height: 66px;
+	margin-left: 48px;
+	font-size:1.6em;
+}
+
+.green, input:hover {
+	color: #5aaf0a;
+}
+
+.form .label {
+	padding: 0px;
+}
+
+h2 {
+	font-size: 1.30em;
+}
+
+h4 {
+	font-weight: normal;
+	font-size: 0.9em;
+}
+
+h5 {
+	font-weight: normal;
+	color: #5aaf0a;
+	display: inline-block;
+}
+
+h6 {
+	font-weight: normal;
+	color: #aaa;
+	display: inline-block;	
+}
+
+.panel-heading {
+	padding: 4px 0px 6px 8px;
+}
+
+.right {
+	display:inline-block;
+	float:right;
+	margin: 6px 14px 0px 0px;
+}
+ a, a:hover {
+ 	text-decoration: none;
+ 	color:inherit;
+ }
+
+ a:hover {
+ 	color: #5aaf0a;
+ }
+
+textarea {
+	width: 98%;
+	height: 128px;
+	border-color: #bbb;
+}
+
+input {
+	color:#444;
+	padding:2px 8px;
+}
+
+.float-left {
+	float:left;
+	margin-right: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
