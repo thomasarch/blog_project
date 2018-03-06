@@ -10,6 +10,8 @@ gem 'devise'
 # use gravatar pic
 gem 'gravatarify', '~> 3.0.0'
 # allows user to add their own profile pic
+gem 'fog'
+gem 'figaro'
 gem 'carrierwave', '~> 1.0'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
